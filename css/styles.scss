@@ -1,0 +1,43 @@
+$base-color: #402d31;
+$footer-color: #39282b;
+$navbar-color: #332427;
+$primary-color: #74534c;
+$secondary-color: #7a7072;
+$tertiary-color: #f2ac57;
+$quaternary-color: #f1b988;
+$quinary-color: #c1b0a9;
+$senary-color: #22967f;
+$text-color: white;
+
+.navbar {
+  background-color: $navbar-color !important;
+}
+
+.container {
+  max-width: 80% !important;
+}
+
+.nav-item-side {
+  background-color: $secondary-color;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.nav-item-side:hover {
+  background-color: $primary-color;
+}
+
+.waves-img {
+  width: 100%;
+  img {
+    width: 100% !important;
+    height: 800px;
+  }
+}
+
+footer {
+  background-color: $navbar-color;
+  height: 60px;
+}
