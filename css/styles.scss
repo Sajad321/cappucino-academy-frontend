@@ -31,9 +31,54 @@ $text-color: white;
 
 .waves-img {
   width: 100%;
-  img {
+
+  .background-img {
     width: 100% !important;
     height: 800px;
+  }
+
+  .landing {
+    position: absolute;
+    color: $text-color;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+    .landing-top {
+      font-size: 50px;
+      text-align: center;
+    }
+    .landing-center {
+      font-size: 25px;
+      padding-left: 35px;
+    }
+    .landing-input {
+      border: none;
+      border-bottom: 1px solid $text-color;
+      background-color: rgba($color: #000000, $alpha: 0);
+      color: $text-color;
+      margin-left: 35px;
+    }
+    .landing-input:focus {
+      outline: none;
+    }
+    .landing-button {
+      background-color: $secondary-color;
+      color: $text-color;
+      transition: 0.5s;
+      border-radius: 0;
+      margin-left: 30px;
+    }
+    .landing-button:hover {
+      background-color: $quinary-color;
+    }
+  }
+  .landing-img {
+    position: absolute;
+    width: 1000px;
+    border-radius: 70px;
+    top: 0;
+    right: 0;
+    transform: translate(-10%, 4%);
   }
 }
 
