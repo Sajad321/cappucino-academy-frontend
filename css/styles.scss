@@ -82,7 +82,88 @@ $text-color: white;
   }
 }
 
-footer {
+.content-section {
+  background-color: $base-color;
+  margin-top: -5px;
+  .courses {
+    height: 70px;
+  }
+  .slider {
+    height: 500px;
+  }
+  .slider-swiper {
+    width: 75%;
+  }
+}
+
+.card {
+  border-radius: 20px;
+  background-color: $base-color;
+}
+
+.courses-card-body {
+  background-color: $primary-color;
+  height: 80px;
+  border-radius: 20px;
+  z-index: 9;
+}
+
+.instructors-card-body {
+  background-color: $primary-color;
+  height: 300px;
+  border-radius: 20px;
+  z-index: 9;
+}
+
+.card-img {
+  margin-top: -17px;
+  border-radius: 0 0 20px 20px;
+}
+
+.swiper-button-prev::after {
+  color: $tertiary-color;
+}
+
+.swiper-button-next::after {
+  color: $tertiary-color;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $tertiary-color !important;
+}
+
+.card-common {
+  background-color: $primary-color;
+  height: 200px;
+}
+
+.footer-1 {
+  background-color: $footer-color;
+  height: 200px;
+}
+
+.footer-2 {
   background-color: $navbar-color;
   height: 60px;
+}
+
+@media (max-width: 640) {
+  .slider-swiper {
+    width: 100% !important;
+  }
+}
+
+iframe {
+  .tgme_main {
+    background-color: $primary-color !important;
+  }
+  .tgme_header {
+    background-color: $secondary-color !important;
+  }
+  .tgme_container {
+    background-color: $primary-color !important;
+  }
+  .tgme_channel_history {
+    background-color: $primary-color !important;
+  }
 }
