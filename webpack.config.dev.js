@@ -25,6 +25,7 @@ module.exports = {
       },
     },
     open: true,
+    historyApiFallback: true,
     // stats: "minimal",
     // overlay: true,
     // historyApiFallback: true,

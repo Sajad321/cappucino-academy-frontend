@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "../../assets/logo.svg";
 
@@ -24,41 +24,68 @@ function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <NavLink
+                className="nav-link"
+                aria-current="page"
+                to="/"
+                activeClassName="active"
+              >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink
+                className="nav-link"
+                to="/courses"
+                activeClassName="active"
+              >
                 Courses
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <NavLink
+                className="nav-link"
+                aria-current="page"
+                to="/ambassdors"
+                activeClassName="active"
+              >
                 Ambassdors
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink
+                className="nav-link"
+                to="/our-team"
+                activeClassName="active"
+              >
                 Our Team
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <NavLink
+                className="nav-link"
+                aria-current="page"
+                to="/contact"
+                activeClassName="active"
+              >
                 Contact us
-              </a>
+              </NavLink>
             </li>
           </ul>
           <form className="d-flex justify-content-center">
             <div className="nav-item-side">
-              <a className="nav-link text-light" href="#">
+              <Link className="nav-link text-light" to="/login">
                 Login
-              </a>
+              </Link>
             </div>
             <div className="nav-item-side ms-3">
-              <a className="nav-link text-light" aria-current="page" href="#">
+              <Link
+                className="nav-link text-light"
+                aria-current="page"
+                to="/sign-up"
+              >
                 Sign up
-              </a>
+              </Link>
             </div>
           </form>
         </div>
